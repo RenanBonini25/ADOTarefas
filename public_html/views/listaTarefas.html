@@ -1,0 +1,17 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Concluídas</th>
+            <th>Tarefa</th>
+            <th>Validade</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="tarefa in listaTarefas">
+            <td><input type="checkbox"></td>
+            <td>{{tarefa.nome}}</td>
+            <td>{{tarefa.dataTarefa}}</td>
+        </tr>
+    </tbody>
+</table>
+<button ui-sref="adicionarTarefa" class="btn btn-success">Nova Tarefa</button>

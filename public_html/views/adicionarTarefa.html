@@ -1,0 +1,14 @@
+<h1>Nova Tarefa</h1>
+<form>
+    <div class="form-group col-md-6">
+        <label for="nomeTarefa">Tarefa</label>
+        <input type="text" ng-model="tarefa.nome" class="form-control" id="nomeTarefa" placeholder="Nova tarefa">
+    </div>
+    <div class="form-group col-md-6">
+        <label for="data">Data</label>
+        <input type="text" ng-model="tarefa.dataTarefa" class="form-control" placeholder="Ex.: dd/mm/aaaa" data-mask="00/00/0000" maxlength="10" autocomplete="off">
+    </div>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button ui-sref="listaTarefas" class="btn btn-light">Cancelar</button>
+    <button ng-click="adicionarTarefa()" class="btn btn-primary">Adicionar</button>
+</form>
